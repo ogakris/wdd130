@@ -29,10 +29,20 @@
     }
 
     p,
-    section,
     article {
         margin: 16px;
         padding: 8px;
+    }
+
+    section h2 {
+        background-color: #004e64;
+        /* banner color */
+        color: #ffffff;
+        padding: 12px;
+        margin: -8px -8px 16px -8px;
+        /* stretches banner to section edges */
+        text-align: center;
+        font-size: 1.4rem;
     }
 
     footer .socialmedia a img {
