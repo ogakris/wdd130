@@ -46,10 +46,6 @@ article {
     position: relative;
 }
 
-.hero h1 {
-    position: absolute;
-}
-
 .hero article {
     position: absolute;
 }
