@@ -48,6 +48,35 @@ article {
     text-decoration: none;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section h2 {
+    background-color: #004e64;
+    color: #ffffff;
+    padding: 12px;
+    margin: -8px -8px 16px -8px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+footer .socialmedia a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+
+.hero {
+    position: relative;
+}
+
 .hero img {
     display: block;
     width: 100%;
