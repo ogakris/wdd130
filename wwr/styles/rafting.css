@@ -37,11 +37,9 @@ article {
 
 section h2 {
     background-color: #004e64;
-    /* banner color */
     color: #ffffff;
     padding: 12px;
     margin: -8px -8px 16px -8px;
-    /* stretches banner to section edges */
     text-align: center;
     font-size: 1.4rem;
 }
@@ -58,7 +56,7 @@ footer .socialmedia a img {
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 1000%;
     height: auto;
 }
 
