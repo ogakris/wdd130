@@ -5,14 +5,19 @@
 }
 
 body {
-    font-family: sans-serif);
-    color: var(--accent1-color);
+    font-family: sans-serif;
+    color: #fff;
+}
+
+footer a {
+    font-size: 0.85rem;
 }
 
 header,
 main,
 footer {
-    width: 84px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
