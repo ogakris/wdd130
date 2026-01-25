@@ -35,8 +35,15 @@
         padding: 8px;
     }
 
-    .socialmedia a {
-        text-decoration: none;
+    footer .socialmedia a img {
+        width: 32px;
+        /* adjust as needed */
+        height: auto;
+        /* maintain aspect ratio */
+        display: inline-block;
+        /* ensures proper spacing */
+        margin: 0 8px;
+        /* optional spacing between icons */
     }
 
     .hero {
