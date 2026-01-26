@@ -3,7 +3,8 @@ body {
     line-height: 1.6;
 }
 
-header {
+header,
+footer {
     background-color: #333;
     color: fff;
     padding: 10px 0;
@@ -21,10 +22,28 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    border-bottom: 1px solid #222;
+}
+
 img {
     width: 100%;
     height: auto;
     box-shadow: 30px 20px 30px #333;
 }
 
-footer {}
+section {
+    margin: 20px;
+    border: 1px solid rgb(0, 0, 10%);
+    padding: 10px;
+    background-color: #abe;
+    font-size: 9rem;
+}
+
+section p {
+    margin: 10px;
+}
+
+footer {
+    font-size: .9rem;
+}
