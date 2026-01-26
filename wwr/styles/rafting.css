@@ -44,7 +44,12 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
+section h2 {
+    padding: auto;
+    color: var(--accent1-color);
+}
+
+section .socialmedia a {
     text-decoration: none;
 }
 
