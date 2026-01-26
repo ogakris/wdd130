@@ -45,8 +45,11 @@ article {
 }
 
 section h2 {
-    padding: auto;
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    padding: 12px;
+    margin: -8px -8px 16px -8px;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 section .socialmedia a {
