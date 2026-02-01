@@ -76,8 +76,42 @@ section h2 {
     font-size: 1.4rem;
 }
 
-section .socialmedia a {
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+section a {
     text-decoration: none;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
 }
 
 .hero {
