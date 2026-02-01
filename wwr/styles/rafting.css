@@ -105,3 +105,14 @@ h1 {
     float: right;
     width: 125px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 8px;
+}
