@@ -67,6 +67,18 @@ article {
     padding: 8px;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 section h2 {
     background-color: var(--accent2-color);
     padding: 12px;
@@ -80,6 +92,10 @@ section h2 {
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
     text-align: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
 }
 
 .adventures img {
@@ -98,6 +114,16 @@ section a {
 
 .hero {
     position: relative;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 16px;
+    width: 80%;
 }
 
 .hero img {
