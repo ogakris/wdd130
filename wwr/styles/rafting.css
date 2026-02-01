@@ -34,8 +34,10 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 h1,
@@ -157,4 +159,14 @@ footer {
 .socialmedia {
     display: flex;
     gap: 8px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.1);
 }
