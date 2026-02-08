@@ -170,3 +170,24 @@ footer {
 .socialmedia a:hover img {
     transform: scale(1.1);
 }
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.profile-grid figure img {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+}
+
+.company-info,
+.employee-profiles,
+.contact-form {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
