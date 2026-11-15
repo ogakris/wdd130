@@ -28,11 +28,7 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    color: var(--accent2-color);
 }
 
 header img {
