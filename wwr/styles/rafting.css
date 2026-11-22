@@ -35,7 +35,7 @@ header {
     padding: 10px;
 }
 
-header img {
+.site-header > img {
     width: 100px;
     height: auto;
     justify-self: center;
@@ -81,7 +81,6 @@ nav a:hover {
     font-family: var(--heading-font);
 }
 
-nav,
 p,
 section,
 article {
@@ -139,10 +138,12 @@ footer {
     padding: 10px;
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 600px) {
+
     header {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     nav ul {
