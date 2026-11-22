@@ -27,17 +27,24 @@ footer {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: white;
+    padding: 10px;
 }
 
 header img {
     width: 100px;
     height: auto;
+    justify-self: center;
 }
 
-nav ul {
+.main-nav ul {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
