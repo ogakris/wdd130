@@ -22,7 +22,7 @@ body {
     color: var(--accent1-color);
 }
 
-/* Header, Main and Footer Width */
+/* Header, Main and Footer */
 header,
 main,
 footer {
@@ -31,7 +31,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Header Layout - CSS Grid */
+/* HEADER - CSS GRID */
 .site-header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -41,14 +41,18 @@ footer {
     padding: 10px;
 }
 
-/* Header Logo */
 .site-header > img {
     width: 100px;
     height: auto;
     justify-self: center;
 }
 
-/* Navigation Layout - Flexbox */
+/* NAVIGATION - FLEXBOX */
+.main-nav {
+    margin: 0;
+    padding: 0;
+}
+
 .main-nav ul {
     display: flex;
     justify-content: space-around;
@@ -56,7 +60,6 @@ footer {
     list-style: none;
 }
 
-/* Navigation Links */
 nav a {
     display: block;
     padding: 16px;
@@ -68,15 +71,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Main Content Spacing */
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Hero Section */
+/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -85,12 +80,6 @@ article {
     display: block;
     width: 100%;
     height: 350px;
-    object-fit: cover;
-}
-
-.hero article img {
-    width: 125px;
-    height: 100px;
     object-fit: cover;
 }
 
@@ -106,12 +95,13 @@ article {
     font-family: var(--heading-font);
 }
 
-/* Hero Article */
+/* HERO ARTICLE */
 .hero article {
     position: absolute;
     bottom: 20px;
     right: 20px;
     width: 60%;
+    margin: 0;
     background-color: var(--secondary-color);
     color: #222;
     padding: 12px;
@@ -121,13 +111,16 @@ article {
 .hero article img {
     float: right;
     width: 125px;
-    height: auto;
+    height: 100px;
+    object-fit: cover;
     margin: 0 0 10px 10px;
     border: 2px solid white;
 }
 
-/* General Section Styling */
+/* GENERAL SECTION STYLING */
 section {
+    margin: 16px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -136,7 +129,7 @@ section h2 {
     font-family: var(--heading-font);
 }
 
-/* History Section - CSS Grid */
+/* HISTORY - CSS GRID */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -148,9 +141,30 @@ section h2 {
     grid-column: 1 / 4;
 }
 
+.history p {
+    margin: 0;
+    padding: 8px;
+}
+
 .history img {
+    display: block;
     width: 100%;
-    height: auto;
+    max-width: 220px;
+    height: 150px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+/* ADVENTURES - CSS GRID */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / 6;
 }
 
 .adventures figure {
@@ -166,7 +180,12 @@ section h2 {
     object-fit: cover;
 }
 
-/* Footer Layout */
+.adventures figcaption {
+    padding: 8px 2px;
+    font-weight: bold;
+}
+
+/* FOOTER */
 .site-footer {
     display: flex;
     align-items: center;
@@ -179,11 +198,13 @@ section h2 {
     margin: 0;
 }
 
-/* Social Media Icons */
+/* SOCIAL MEDIA */
 .socialmedia {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia a {
@@ -191,11 +212,12 @@ section h2 {
 }
 
 .socialmedia img {
+    display: block;
     width: 32px;
     height: 32px;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 600px) {
 
     /* Header */
@@ -210,7 +232,11 @@ section h2 {
         justify-content: center;
     }
 
-    /* Hero Article */
+    /* Hero */
+    .hero > img {
+        height: 250px;
+    }
+
     .hero article {
         position: relative;
         width: auto;
@@ -228,18 +254,9 @@ section h2 {
         grid-column: 1;
     }
 
-    .history img {
-    display: block;
-    width: 100%;
-    max-width: 220px;
-    height: 150px;
-    object-fit: cover;
-    justify-self: center;
-}
-
     /* Adventures */
     .adventures {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .adventures h2 {
